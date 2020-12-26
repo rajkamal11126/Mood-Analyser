@@ -9,7 +9,7 @@ import com.bridgelabz.moodanalyser.MoodAnalysisException;
 public class MoodAnalyserTest {
 	 @Test
 	    public void givenMessage_WhenSad_ShouldReturnSad() {
-	        MoodAnalyser moodAnalyser = new MoodAnalyser("This is a sad message");
+	        MoodAnalyser moodAnalyser = new MoodAnalyser("I am sad message");
 	        String mood;
 			try {
 				mood = moodAnalyser.analyseMood();
@@ -22,7 +22,7 @@ public class MoodAnalyserTest {
 
 	    @Test
 	    public void givenMessage_WhenNotSad_ShoulReturnHappy() {
-	        MoodAnalyser moodAnalyser = new MoodAnalyser("This is a happy message");
+	        MoodAnalyser moodAnalyser = new MoodAnalyser("I am happy message");
 	        String mood;
 			try {
 				mood = moodAnalyser.analyseMood();
