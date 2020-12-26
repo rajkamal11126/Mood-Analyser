@@ -8,15 +8,15 @@ import com.bridgelabz.moodanalyser.MoodAnalyser;
 public class MoodAnalyserTest {
 	 @Test
 	    public void givenMessage_WhenSad_ShouldReturnSad() {
-	        MoodAnalyser moodAnalyser = new MoodAnalyser();
-	        String mood = moodAnalyser.analyseMood("this is a sad message");
+	        MoodAnalyser moodAnalyser = new MoodAnalyser("This is a sad message");
+	        String mood = moodAnalyser.analyseMood();
 	        Assert.assertEquals("SAD" , mood);
 	    }
 
 	    @Test
 	    public void givenMessage_WhenNotSad_ShoulReturnHappy() {
-	        MoodAnalyser moodAnalyser = new MoodAnalyser();
-	        String mood = moodAnalyser.analyseMood("This is a happy message");
-	        Assert.assertEquals("HAPPY" , mood);
+	        MoodAnalyser moodAnalyser = new MoodAnalyser("This is a happy message");
+	        String mood = moodAnalyser.analyseMood();
+	        Assert.assertEquals("HAPPY",mood);
 	    }
 }
