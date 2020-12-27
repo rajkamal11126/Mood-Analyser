@@ -6,7 +6,7 @@ public class MoodAnalysisException extends Exception {
 		FIELD_SETTING_ISSUE, OBJECT_CREATION, NO_ACCESS
 	}
 
-	ExceptionType type;
+	public ExceptionType type;
 
 	public MoodAnalysisException(String message) {
 		super(message);

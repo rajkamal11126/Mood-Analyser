@@ -7,7 +7,7 @@ public class MoodAnalyserReflector {
 	public static MoodAnalyser createMoodAnalyser() {
 		MoodAnalyser result = null;
 		try {
-			Class<?> moodAnalyserClass = Class.forName("com.bridgelabz.MoodAnalyser");
+			Class<?> moodAnalyserClass = Class.forName("com.bridgelabz.moodanalyser.MoodAnalyser");
 			Constructor<?> moodConstructor = moodAnalyserClass.getConstructor();
 			Object moodObj = moodConstructor.newInstance();
 			return (MoodAnalyser) moodObj;
@@ -27,7 +27,7 @@ public class MoodAnalyserReflector {
 
 	public static MoodAnalyser createMoodAnalyserObject(String s) throws MoodAnalysisException {
 		try {
-			Class<?> moodAnalyserClass = Class.forName("com.bridgelabz.MoodAnalyser");
+			Class<?> moodAnalyserClass = Class.forName("com.bridgelabz.moodanalyser.MoodAnalyser");
 			Constructor<?> moodConstructor = moodAnalyserClass.getConstructor(String.class);
 			Object moodObj = moodConstructor.newInstance(s);
 			return (MoodAnalyser) moodObj;
